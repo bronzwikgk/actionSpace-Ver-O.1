@@ -1,5 +1,6 @@
 //https://dev.to/pixari/build-a-very-basic-spa-javascript-router-2k4p
 //https://willtaylor.blog/client-side-routing-in-vanilla-js/
+//https://github.com/philipwalton/router/blob/master/index.js
 
 function gotoService(service) {
     window.location.href = service;
