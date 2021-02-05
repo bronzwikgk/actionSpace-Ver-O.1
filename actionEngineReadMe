@@ -1,0 +1,12 @@
+actionEngine is a library that executes a defined actionFlow json object, when called via Init api of actionEngine Class.
+
+a actionFlow can have a single condition or multiple condition with operators  | and | or | not 
+
+
+task = {
+    method:get
+    entity:{
+
+    }
+
+}
