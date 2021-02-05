@@ -1,0 +1,606 @@
+{
+    "tagName": "HTML",
+    "attributes": {},
+    "childNodes": [
+        {
+            "tagName": "HEAD",
+            "attributes": {
+                "currentstate": "inDom"
+            },
+            "childNodes": [
+                "\n        ",
+                {
+                    "tagName": "BASE",
+                    "attributes": {
+                        "target": "_self",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "META",
+                    "attributes": {
+                        "charset": "UTF-8",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "TITLE",
+                    "attributes": {
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [
+                        "[ everything happens here ]"
+                    ],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "LINK",
+                    "attributes": {
+                        "rel": "stylesheet",
+                        "href": "style/style.css",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "LINK",
+                    "attributes": {
+                        "href": "https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Montserrat&family=Open+Sans&family=Poppins",
+                        "rel": "stylesheet",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "META",
+                    "attributes": {
+                        "name": "viewport",
+                        "content": "width=device-width, initial-scale=1.0",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                " \n    "
+            ],
+            "nodeType": 1
+        },
+        "\n    ",
+        {
+            "tagName": "BODY",
+            "attributes": {
+                "data-new-gr-c-s-check-loaded": "14.984.0",
+                "data-gr-ext-disabled": "forever",
+                "currentstate": "inDom"
+            },
+            "childNodes": [
+                "\n        ",
+                {
+                    "tagName": "DIV",
+                    "attributes": {
+                        "class": "wallpaper",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "EHH",
+                    "attributes": {
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [
+                        "\n            ",
+                        {
+                            "tagName": "DIV",
+                            "attributes": {
+                                "id": "context-menu",
+                                "style": "display: none;",
+                                "currentstate": "inDom"
+                            },
+                            "childNodes": [
+                                "\n            ",
+                                {
+                                    "tagName": "DIV",
+                                    "attributes": {
+                                        "class": "item",
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                ",
+                                        {
+                                            "tagName": "I",
+                                            "attributes": {
+                                                "class": "fa fa-cut",
+                                                "currentstate": "inDom"
+                                            },
+                                            "childNodes": [],
+                                            "nodeType": 1
+                                        },
+                                        " Cut\n            "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n            ",
+                                {
+                                    "tagName": "DIV",
+                                    "attributes": {
+                                        "class": "item",
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                ",
+                                        {
+                                            "tagName": "I",
+                                            "attributes": {
+                                                "class": "fa fa-clone",
+                                                "currentstate": "inDom"
+                                            },
+                                            "childNodes": [],
+                                            "nodeType": 1
+                                        },
+                                        " Copy\n            "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n            ",
+                                {
+                                    "tagName": "DIV",
+                                    "attributes": {
+                                        "class": "item",
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                ",
+                                        {
+                                            "tagName": "I",
+                                            "attributes": {
+                                                "class": "fa fa-paste",
+                                                "currentstate": "inDom"
+                                            },
+                                            "childNodes": [],
+                                            "nodeType": 1
+                                        },
+                                        " Paste\n            "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n            ",
+                                {
+                                    "tagName": "DIV",
+                                    "attributes": {
+                                        "class": "item",
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                ",
+                                        {
+                                            "tagName": "I",
+                                            "attributes": {
+                                                "class": "fa fa-trash-o",
+                                                "currentstate": "inDom"
+                                            },
+                                            "childNodes": [],
+                                            "nodeType": 1
+                                        },
+                                        " Delete\n            "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n            ",
+                                {
+                                    "tagName": "HR",
+                                    "attributes": {
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [],
+                                    "nodeType": 1
+                                },
+                                "\n            ",
+                                {
+                                    "tagName": "DIV",
+                                    "attributes": {
+                                        "class": "item",
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                ",
+                                        {
+                                            "tagName": "I",
+                                            "attributes": {
+                                                "class": "fa fa-refresh",
+                                                "currentstate": "inDom"
+                                            },
+                                            "childNodes": [],
+                                            "nodeType": 1
+                                        },
+                                        " Reload\n            "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n            ",
+                                {
+                                    "tagName": "DIV",
+                                    "attributes": {
+                                        "class": "item",
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                ",
+                                        {
+                                            "tagName": "I",
+                                            "attributes": {
+                                                "class": "fa fa-times",
+                                                "currentstate": "inDom"
+                                            },
+                                            "childNodes": [],
+                                            "nodeType": 1
+                                        },
+                                        " Exit\n            "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n             "
+                            ],
+                            "nodeType": 1
+                        },
+                        "\n            ",
+                        {
+                            "tagName": "CONTENT",
+                            "attributes": {
+                                "currentstate": "inDom"
+                            },
+                            "childNodes": [
+                                "\n                ",
+                                {
+                                    "tagName": "SECTION",
+                                    "attributes": {
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "\n                    ",
+                                        {
+                                            "tagName": "CONTAINER",
+                                            "attributes": {
+                                                "currentstate": "click",
+                                                "prevstate": "mouseup"
+                                            },
+                                            "childNodes": [
+                                                "\n                        ",
+                                                {
+                                                    "tagName": "H1",
+                                                    "attributes": {
+                                                        "currentstate": "mouseout",
+                                                        "prevstate": "mousemove"
+                                                    },
+                                                    "childNodes": [
+                                                        "[ everything happens here ]"
+                                                    ],
+                                                    "nodeType": 1
+                                                },
+                                                "\n                        ",
+                                                {
+                                                    "tagName": "P",
+                                                    "attributes": {
+                                                        "currentstate": "mouseout",
+                                                        "prevstate": "mousemove"
+                                                    },
+                                                    "childNodes": [
+                                                        "\n                            a new ",
+                                                        {
+                                                            "tagName": "B",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "lightweight"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        ", modern and fully customizable ",
+                                                        {
+                                                            "tagName": "B",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "work-space/work-shop"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        ".",
+                                                        {
+                                                            "tagName": "BR",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                            your own ",
+                                                        {
+                                                            "tagName": "B",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "secure"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        " ecosystem for a seamless, integrated experience across devices & services.",
+                                                        {
+                                                            "tagName": "BR",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                        "
+                                                    ],
+                                                    "nodeType": 1
+                                                },
+                                                "\n                        ",
+                                                {
+                                                    "tagName": "P",
+                                                    "attributes": {
+                                                        "currentstate": "mouseout",
+                                                        "prevstate": "mousemove"
+                                                    },
+                                                    "childNodes": [
+                                                        "\n                            for creators, collaborators, buyers, retailers, educators & influencers.",
+                                                        {
+                                                            "tagName": "BR",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                            the hardest working ",
+                                                        {
+                                                            "tagName": "B",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "animal"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        " on this planet,",
+                                                        {
+                                                            "tagName": "BR",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                            us 😊 ",
+                                                        {
+                                                            "tagName": "BR",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [],
+                                                            "nodeType": 1
+                                                        },
+                                                        {
+                                                            "tagName": "BR",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                            it's ",
+                                                        {
+                                                            "tagName": "B",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "@ctionSpaces"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        " are full of action, drama, ",
+                                                        {
+                                                            "tagName": "B",
+                                                            "attributes": {
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "integration, automation,"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        " pinch of comedy and a dash of Ai.\n                        "
+                                                    ],
+                                                    "nodeType": 1
+                                                },
+                                                "\n                        ",
+                                                {
+                                                    "tagName": "ACTIONBAR",
+                                                    "attributes": {
+                                                        "currentstate": "inDom"
+                                                    },
+                                                    "childNodes": [
+                                                        "\n                            ",
+                                                        {
+                                                            "tagName": "BUTTON",
+                                                            "attributes": {
+                                                                "data-element": "selfInvite",
+                                                                "href": "#selfInvite",
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "self-invite"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                            ",
+                                                        {
+                                                            "tagName": "BUTTON",
+                                                            "attributes": {
+                                                                "id": "btn",
+                                                                "data-element": "knowMore",
+                                                                "href": "#knowMore",
+                                                                "currentstate": "inDom"
+                                                            },
+                                                            "childNodes": [
+                                                                "know More"
+                                                            ],
+                                                            "nodeType": 1
+                                                        },
+                                                        "\n                        "
+                                                    ],
+                                                    "nodeType": 1
+                                                },
+                                                "\n                    "
+                                            ],
+                                            "nodeType": 1
+                                        },
+                                        "\n                "
+                                    ],
+                                    "nodeType": 1
+                                },
+                                "\n            "
+                            ],
+                            "nodeType": 1
+                        },
+                        "\n            ",
+                        {
+                            "tagName": "FOOTER",
+                            "attributes": {
+                                "currentstate": "inDom"
+                            },
+                            "childNodes": [
+                                "made with 🧠 & 🧡, during 🌧️ at ",
+                                {
+                                    "tagName": "B",
+                                    "attributes": {
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [
+                                        "shunya.ek"
+                                    ],
+                                    "nodeType": 1
+                                },
+                                ", goa, india.\n                ",
+                                {
+                                    "tagName": "BR",
+                                    "attributes": {
+                                        "currentstate": "inDom"
+                                    },
+                                    "childNodes": [],
+                                    "nodeType": 1
+                                },
+                                "with help from  google & the world-wide-web tech community.\n            "
+                            ],
+                            "nodeType": 1
+                        },
+                        "\n        "
+                    ],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "src": "scripts/ehhDataProcessorV4.js",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "src": "scripts/processUrlV2.js",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "src": "scripts/processFileV2.js",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "src": "scripts/ehhDataHelpersV3.js",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        \n        ",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "src": "scripts/ehh.js",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n        ",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "src": "scripts/wiptesting.js",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [],
+                    "nodeType": 1
+                },
+                "\n    ",
+                "\n",
+                {
+                    "tagName": "SCRIPT",
+                    "attributes": {
+                        "type": "text/javascript",
+                        "currentstate": "inDom"
+                    },
+                    "childNodes": [
+                        "\n\t// <![CDATA[  <-- For SVG support\n\tif ('WebSocket' in window) {\n\t\t(function () {\n\t\t\tfunction refreshCSS() {\n\t\t\t\tvar sheets = [].slice.call(document.getElementsByTagName(\"link\"));\n\t\t\t\tvar head = document.getElementsByTagName(\"head\")[0];\n\t\t\t\tfor (var i = 0; i < sheets.length; ++i) {\n\t\t\t\t\tvar elem = sheets[i];\n\t\t\t\t\tvar parent = elem.parentElement || head;\n\t\t\t\t\tparent.removeChild(elem);\n\t\t\t\t\tvar rel = elem.rel;\n\t\t\t\t\tif (elem.href && typeof rel != \"string\" || rel.length == 0 || rel.toLowerCase() == \"stylesheet\") {\n\t\t\t\t\t\tvar url = elem.href.replace(/(&|\\?)_cacheOverride=\\d+/, '');\n\t\t\t\t\t\telem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());\n\t\t\t\t\t}\n\t\t\t\t\tparent.appendChild(elem);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';\n\t\t\tvar address = protocol + window.location.host + window.location.pathname + '/ws';\n\t\t\tvar socket = new WebSocket(address);\n\t\t\tsocket.onmessage = function (msg) {\n\t\t\t\tif (msg.data == 'reload') window.location.reload();\n\t\t\t\telse if (msg.data == 'refreshcss') refreshCSS();\n\t\t\t};\n\t\t\tif (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {\n\t\t\t\tconsole.log('Live reload enabled.');\n\t\t\t\tsessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);\n\t\t\t}\n\t\t})();\n\t}\n\telse {\n\t\tconsole.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');\n\t}\n\t// ]]>\n"
+                    ],
+                    "nodeType": 1
+                },
+                "\n"
+            ],
+            "nodeType": 1
+        }
+    ],
+    "nodeType": 1
+}
