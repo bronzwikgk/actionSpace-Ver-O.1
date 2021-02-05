@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+  
+}
+
+header{
+    grid-column: 1/4;
+    padding: 21px; 
+}
+
+brandAssets{
+    margin: 21px;
+    padding: 13px;
+    height: 125px; 
+    
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.searchBar{
+    padding-left: 13px;
+    padding: 8px;
+    margin-left: 54px;
+    margin-right: 54px;
+    font-family: 'Poppins', sans-serif;  
+    border-radius: 3px;
+    border: none;
+    font-size: 21px;
+    width: 300px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    
+
+
+}
+
+.searchBar:focus {
+    width: 500px;
+  }
+
+
+actionBar{
+    margin-left: 144px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 21px;
+    
+}
+
+actionBar > *{
+    padding: 13px;
+    padding-left: 21px;
+    padding-right: 21px;
+    cursor: pointer;
+    border-radius: 8px;
+
+  }
+actionBar > *:hover{
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.10);
+  }
+
+  mainContent{
+    grid-column: 2 / 3;
+    padding-left: 144 px;
+    margin-top: 34px;
+    margin-left: 245px;
+    margin-right: 145px;
+    padding-left: 54px;
+    padding-top: 54px;  
+
+  }
+
+  footer {  
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+  }
+
+/* Closable button inside the container tab */
+.closebtn {
+    float: right;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  
+.item{
+height: 50px;
+width: 50px;
+position: absolute;
+background-color: gold;
+}
+
+
+.resizer{
+ position: absolute;
+ width: 10px; 
+ height: 10px;
+ background-color: black;
+ z-index: 2;
+ border-radius: 3px;
+}
+
+.resizer.nw{
+top:-1px;
+left:-1px;
+cursor: nw-resize;
+}
+
+.resizer.ne{
+  top:-1px;
+  right:-1px;
+  cursor: ne-resize;
+}
+
+.resizer.sw{
+    bottom:-1px;
+    left:-1px;
+    cursor: sw-resize;
+}
+
+.resizer.se{
+      bottom:-1px;
+      right:-1px;
+      cursor: se-resize;
+}
+
+
+
