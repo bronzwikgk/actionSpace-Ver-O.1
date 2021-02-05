@@ -1,5 +1,5 @@
-everyFlow is a workFlow engine. it works on the principle of If this then that.
-it takes a  task as in input.
+actionEngine is a library that executes a defined actionFlow json object, when called via Init api of actionEngine Class.
+
 a task can have a single condition or multiple condition with operators  | and | or | not 
 
 
