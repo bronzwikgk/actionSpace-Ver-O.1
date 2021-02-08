@@ -1,5 +1,6 @@
 Please maintain this code structure.
 
+The internal Folder can be branch/fork of the main Branch.
 
 branch Title : 
 1. File How to use/test.md
@@ -13,3 +14,4 @@ branch Title :
 4. config : folder
     /actionEditor.js - Config File for actionSpace and Editor.
 5. Manifest.js
+6. Icons : Folder
