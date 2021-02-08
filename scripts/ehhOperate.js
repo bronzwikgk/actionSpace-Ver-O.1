@@ -29,10 +29,6 @@
 
 
 
-// // static onEveryEntity1(a, b, callback) { 
-// //     a.every(static (element) { callback(element, b); });
-// // }
-
 
 // //https://github.com/google/data-layer-helper
 // //https://sites.google.com/site/scriptsexamples/custom-methods/2d-arrays-library
