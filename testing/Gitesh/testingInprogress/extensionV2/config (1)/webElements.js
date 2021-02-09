@@ -1,0 +1,1 @@
+element = { input: { type: "checkbox" } }

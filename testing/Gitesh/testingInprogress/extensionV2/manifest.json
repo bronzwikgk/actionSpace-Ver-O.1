@@ -1,0 +1,31 @@
+{
+    "name": "ehh_In_Testing Gk",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "everythingHappenHere.In testing Gk",
+    "icons": {
+        "128": "icon/icon_128.png"
+    },
+    "background":{
+        "scripts" : ["scripts/bgServiceV2.js","scripts/hot-reload.js","scripts/dataHelpersv3.js","scripts/listener.js","scripts/create.js"],"persistent": true
+    },
+   "content_scripts": [
+    {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": ["scripts/ehhAppV2.js","scripts/dataHelpersv3.js"],
+        "css":["style/style.css"],
+        "all_frames": true
+    }
+],
+    "permissions": [
+        "nativeMessaging",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "offline_enabled": true
+
+}

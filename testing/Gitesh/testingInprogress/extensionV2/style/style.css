@@ -1,0 +1,20 @@
+
+[currentstate="mousemove"]{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  
+}
+
+[currentstate="mousemove"]::before{
+  content: attr(currentstate);
+  color: #1e2326;
+  position: absolute; 
+  display:block;
+  background-color: yellow;
+  z-index: -1;
+  border-style: solid;
+  border-width: thin;
+}
+
+#checkbox_01{
+align-self: flex-start;
+  z-index: 7;
+}

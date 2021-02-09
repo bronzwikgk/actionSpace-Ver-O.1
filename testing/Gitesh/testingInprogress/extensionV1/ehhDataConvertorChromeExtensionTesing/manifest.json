@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "[ ehh ]",
+  "version": "0.9",
+  "description": "[ everything happens here ] ",
+  "author": "bronzwikGk",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "ehhBrowserAction.html",
+    "default_title": "[ ehh ]"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "ehhPageAction.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "ehh.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>","storage",
+    "downloads"
+  ]
+}

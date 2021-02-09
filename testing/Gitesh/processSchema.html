@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Montserrat&family=Open+Sans&family=Poppins"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style/processSchema.css">
+
+</head>
+<body>
+    <button type = "btn" id="get">get</button>
+    <button type = "submit" id="AddRow">AddRow</button>
+    <div id ="output"> This is a testing page for processSchemaClass.</div>
+    
+
+    <span>output</span>
+  
+<div id="result" class="well">
+    <form id="result-form" class="form-vertical">
+        <div>
+            <div class="form-group jsonform-error-name"><label for="jsonform-32-elt-name">Name</label>
+                <div class="controls"><input type="text" class="form-control" name="enterSchemaName" value=""
+                        id="enterSchemaName"><span class="help-block">enterSchemaName</span><span
+                        class="help-block jsonform-errortext" style="display:none;"></span></div>
+            </div>
+            <div class="form-group jsonform-error-gender"><label for="jsonform-32-elt-gender">Gender</label>
+                <div class="controls"><select name="gender" id="jsonform-32-elt-gender" class="form-control">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="alien">alien</option>
+                    </select><span class="help-block">Your gender</span><span class="help-block jsonform-errortext"
+                        style="display:none;"></span></div>
+            </div>
+            <div class=""><input type="submit" class="btn btn-primary " value="Submit"></div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="scripts/processSchemaV3.js"></script>
+<script type="text/javascript" src="scripts/dataHelpersv3.js"></script>
+<script type="text/javascript" src="json/jsonSamples.json"></script>
+<script type="text/javascript" src="scripts/datavalidationV1.js"></script>
+<script type="text/javascript" src="scripts/create.js"></script>
+</body>
+</html>
