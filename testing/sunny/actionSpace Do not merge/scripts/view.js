@@ -13,6 +13,7 @@ class EventEmitter {
     }
 }
 
+
 class EntityView extends EventEmitter {
     constructor(model, elements) {
         super();
