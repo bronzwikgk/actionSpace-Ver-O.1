@@ -1,6 +1,6 @@
 
 var formElements = ["button", 'datalist', "div", 'fieldset', "form", "input", "label", 'legend', 'li', 'meter', 'optgroup', "option", 'output', 'progress', "select", "span", "textarea", "ul"];
-var properties = ["type", "title", "class", "id", "name", "value", "required", "default", "readOnly"]
+var attributes = ["type", "title", "class", "id", "name", "value", "required", "default", "readOnly"]
 var supportedType = [ "string","number","array","integer","boolean","object"]
 
 class processSchema { 
