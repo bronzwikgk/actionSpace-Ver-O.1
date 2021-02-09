@@ -1,9 +1,8 @@
 
-
-
 operate
 ====== 
 brief
+
 operate class is part of process Module.
 
 it enforces attributes and parameter on any entity processed in the process module,
