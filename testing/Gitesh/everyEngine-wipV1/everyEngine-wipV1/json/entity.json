@@ -1,0 +1,20 @@
+
+var basic = {
+    "schema": {
+        "name": {
+            "label": "Name",
+            "input": "string",
+            "span": "Nickname allowed"
+        },
+        "gender": {
+            "label": "Gender",
+            "select": "string",
+            "option": [
+                "male",
+                "female",
+                "alien"
+            ],
+            "span": "Your gender"
+        }
+    }
+}
