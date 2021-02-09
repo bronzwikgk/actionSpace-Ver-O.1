@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CSS input:checked gallery example - MDN</title>
+<style type="text/css">
+#gallery-container {
+	position: relative;
+	width: 500px;
+	height: auto;
+	padding-top: 350px;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 1px #aaaaaa solid;
+}
+
+img.gallery-fullsize {
+	position: absolute;
+	top: 15px;
+	left: 50px;
+	display: none;
+}
+
+div.gallery-item {
+	display: inline-block;
+}
+
+input.gallery-selector {
+	display: none;
+}
+
+label.gallery-label {
+	cursor: pointer;
+}
+
+input.gallery-selector:checked ~ img.gallery-fullsize {
+	display: block;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS input:checked gallery</h1>
+<div id="gallery-container">
+	<div class="gallery-item">
+		<label for="gallery-item1" class="gallery-label"><img src="images/1s.jpg" class="gallery-preview" /></label>
+		<input type="radio" name="gallery-list" class="gallery-selector" value="1.jpg" id="gallery-item1" />
+		<img src="images/1.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		<label for="gallery-item2" class="gallery-label"><img src="images/2s.jpg" class="gallery-preview" /></label>
+		<input type="radio" name="gallery-list" class="gallery-selector" value="2.jpg" id="gallery-item2" />
+		<img src="images/2.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		<label for="gallery-item3" class="gallery-label"><img src="images/3s.jpg" class="gallery-preview" /></label>
+		<input type="radio" name="gallery-list" class="gallery-selector" value="3.jpg" id="gallery-item3" />
+		<img src="images/3.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		<label for="gallery-item4" class="gallery-label"><img src="images/4s.jpg" class="gallery-preview" /></label>
+		<input type="radio" name="gallery-list" class="gallery-selector" value="4.jpg" id="gallery-item4" />
+		<img src="images/4.jpg" class="gallery-fullsize" />
+	</div>
+</div>
+</body>
+</html>
