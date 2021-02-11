@@ -69,6 +69,8 @@ remoting.Error.Tag = {
     POLICY_ERROR: /*i18n-content*/ 'ERROR_POLICY',
 };
 
+
+
 /**
  * @param {number} httpStatus An HTTP status code.
  * @return {!remoting.Error} The remoting.Error enum corresponding to the
