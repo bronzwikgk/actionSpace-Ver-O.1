@@ -1,4 +1,3 @@
-
 // https://www.javascripttutorial.net/javascript-logical-operators/
 // https://www.javascripttutorial.net/es-next/javascript-optional-chaining-operator/
 // https://www.javascripttutorial.net/javascript-ternary-operator/
@@ -24,9 +23,7 @@
 //     }
 
 
-
 // }
-
 
 
 // // static onEveryEntity1(a, b, callback) {
@@ -46,10 +43,10 @@ class conductor {
     //this function calls a callback function with a and b parameter. Conducted Routes have to be registered before else will throw error.
     //  on param = [ anyEvent ]
     static conduct(a, b, c, d, callback, callbackClass) {
-    // console.log(a, b, callback)
+        // console.log(a, b, callback)
         //eval(callbackClass.callback(a, b))
         var response = callbackClass[callback](a, b, c, d);
-      //  console.log("conduct response",response)
+        //  console.log("conduct response",response)
         return response;
     }
 
@@ -61,76 +58,194 @@ class conductor {
 
 class operator {
     //    //arr.every(callback(element[, index[, array]])[, thisArg])
-    static onEvery1(a, b, callbacks) { return callbacks.every(function (callback) {return operate[callback](a, b);}); }
+    static onEvery1(a, b, callbacks) {
+        return callbacks.every(function (callback) {
+            return operate[callback](a, b);
+        });
+    }
 
 }
 
 class operate {
 
     // operate to check if the input is not null or undefined to be added
-    static isEmpty(argA) { return Object.keys(argA).length === 0 }
-    static isNotEmpty(argA) { return argA !== '' && argA !== null && typeof argA !== 'undefined' }
+    static isEmpty(argA) {
+        return Object.keys(argA).length === 0
+    }
+
+    static isNotEmpty(argA) {
+        return argA !== '' && argA !== null && typeof argA !== 'undefined'
+    }
+
     //returs the data Type of the input.
-    static is(argA) { return Object.getPrototypeOf(argA).constructor.name; }
-    static isInt(argA) { return Number.isInteger(argA); }
-    static isNumber(argA) { return Number.parseFloat(argA).toString() !== 'NaN' }
-    static isString(argA) { return typeof argA === 'string' }
+    static is(argA) {
+        return Object.getPrototypeOf(argA).constructor.name;
+    }
+
+    static isInt(argA) {
+        return Number.isInteger(argA);
+    }
+
+    static isNumber(argA) {
+        return Number.parseFloat(argA).toString() !== 'NaN'
+    }
+
+    static isString(argA) {
+        return typeof argA === 'string'
+    }
+
     /**
      * returns if the input is a key/value in the object options.argB
      * @param {*} argA
      * @param {*} argB  is required to be not empty
      *
      */
-    static isIn(argA, argB) { return argB.indexOf(argA) > -1; }
+    static isIn(argA, argB) {
+        return argB.indexOf(argA) > -1;
+    }
+
     //curently works only for string numbers
-    static isEqualStrict(argA, argB) { return argA === argB; }
+    static isEqualStrict(argA, argB) {
+        return argA === argB;
+    }
+
     //for array's one sided value existence check, return true if each element of a is present in b
-    static isGreaterThan(argA, argB) { return argA > argB }
-    static isGreaterthanOrEqual(argA, argB) { return argA => !!argB }
-    static isSmallerthan(argA, argB) { return argA < argB }
-    static isSmallerthanOrEqual(argA, argB) { return argA <= argB }
-    static instanceof(argA, argB) { return console.log("work in process"); }
+    static isGreaterThan(argA, argB) {
+        return argA > argB
+    }
+
+    static isGreaterthanOrEqual(argA, argB) {
+        return argA => !!argB
+    }
+
+    static isSmallerthan(argA, argB) {
+        return argA < argB
+    }
+
+    static isSmallerthanOrEqual(argA, argB) {
+        return argA <= argB
+    }
+
+    static instanceof(argA, argB) {
+        return console.log("work in process");
+    }
+
     //validate 2 Object, with key's and values
     static isSameObject(argA, argB) {
 
         return console.log("work in process");
     }
+
     //check if argB has all the keys from argA // only for array.
-    static hasAllof(argA, argB) { return argA.every(function (value) { console.log(value, argB); return operate.isIn(value, argB) }); }
-    static arrayIncludes(argA, argB) { return argA.includes(function (value) { return operate.isIn(value, argB); }); }
+    static hasAllof(argA, argB) {
+        return argA.every(function (value) {
+            console.log(value, argB);
+            return operate.isIn(value, argB)
+        });
+    }
+
+    static arrayIncludes(argA, argB) {
+        return argA.includes(function (value) {
+            return operate.isIn(value, argB);
+        });
+    }
+
     //Check for bothArgument to be Number and Integer to be added.
-    static isInRangeNumbers(argA, argB) { return argA.every(function (value) { return operate.isGreaterthanOrEqual(value, argB.min) && operate.isSmallerthanOrEqual(value, argB.max); }); }
+    static isInRangeNumbers(argA, argB) {
+        return argA.every(function (value) {
+            return operate.isGreaterthanOrEqual(value, argB.min) && operate.isSmallerthanOrEqual(value, argB.max);
+        });
+    }
+
     //return true if all items are the same in two unordered Array need to add a return of mismatch values as option.
     static isSameArray(argA, argB) {
-        argA.sort(); argB.sort(); if (argA.length !== argB.length) return false;
-        for (let i = 0; i < argA.length; i++) { if (argA[i] !== argB[i]) return false; } return true;
+        argA.sort();
+        argB.sort();
+        if (argA.length !== argB.length) return false;
+        for (let i = 0; i < argA.length; i++) {
+            if (argA[i] !== argB[i]) return false;
+        }
+        return true;
     }
+
     // Returns if a value is an array
-    static isArray(value) { return value && Array.isArray(value) && typeof value === 'object' && value.constructor === Array; }
+    static isArray(value) {
+        return value && Array.isArray(value) && typeof value === 'object' && value.constructor === Array;
+    }
+
     // Returns if a value is a static
-    static isstatic(value) { return typeof value === 'static'; }
+    static isstatic(value) {
+        return typeof value === 'static';
+    }
+
     // Returns if a value is an object
-    static isObject(value) { return value && typeof value === 'object' && value.constructor === Object; }
-    static isHTML(argA) { return operate.is(argA).includes("HTML") }
+    static isObject(value) {
+        return value && typeof value === 'object' && value.constructor === Object;
+    }
+
+    static isHTML(argA) {
+        return operate.is(argA).includes("HTML")
+    }
+
     // Returns if a value is null
-    static isNull(value) { return value === null; }
+    static isNull(value) {
+        return value === null;
+    }
+
     // Returns if a value is undefined
-    static isUndefined(value) { return typeof value === 'undefined'; }
+    static isUndefined(value) {
+        return typeof value === 'undefined';
+    }
+
     // Returns if a value is a boolean
-    static isBoolean(value) { return typeof value === 'boolean'; }
+    static isBoolean(value) {
+        return typeof value === 'boolean';
+    }
+
     //Returns if a value is a regexp
-    static isRegExp(value) { return value && typeof value === 'object' && value.constructor === RegExp; }
+    static isRegExp(value) {
+        return value && typeof value === 'object' && value.constructor === RegExp;
+    }
+
     // Returns if value is an error object
-    static isError(value) { return value instanceof Error && typeof value.message !== 'undefined'; }
+    static isError(value) {
+        return value instanceof Error && typeof value.message !== 'undefined';
+    }
+
     // Returns if value is a date object
-    static isDate(value) { return value instanceof Date; }
+    static isDate(value) {
+        return value instanceof Date;
+    }
+
     //Returns if the value is a Prototyp
-    static isPrototype(value) { console.log(Object.getPrototypeOf(value) === prototype1); }
+    static isPrototype(value) {
+        console.log(Object.getPrototypeOf(value) === prototype1);
+    }
+
     // Returns if a Symbol
-    static isSymbol(value) { return typeof value === 'symbol'; }
+    static isSymbol(value) {
+        return typeof value === 'symbol';
+    }
+
     //This function validates a valid Url, Returns True or false
-    static isValidUrl(string) { try { new URL(string); } catch (_) { return false; } return true; }
-    static isValidJSONString(str) { try { JSON.parse(str); } catch (e) { return false; } return true; }
+    static isValidUrl(string) {
+        try {
+            new URL(string);
+        } catch (_) {
+            return false;
+        }
+        return true;
+    }
+
+    static isValidJSONString(str) {
+        try {
+            JSON.parse(str);
+        } catch (e) {
+            return false;
+        }
+        return true;
+    }
+
     /**
      *  * Returns true if the given test value is an array containing at least one object; false otherwise.
      * */
@@ -142,10 +257,30 @@ class operate {
         }
         return false;
     }
-    static isChild(argA, argB) { }
-    static isParent(argA, argB) { }
-    static isEven(argA) { return numbers.every(function (e) { return e % 2 === 0; }); }
-    static isOdd(argA) { return numbers.every(function (e) { return Math.abs(e % 2) === 1; }); }
+
+    static isChild(argA, argB) {
+    }
+
+    static isParent(argA, argB) {
+    }
+
+    static isEven(argA) {
+        return numbers.every(function (e) {
+            return e % 2 === 0;
+        });
+    }
+
+    static isOdd(argA) {
+        return numbers.every(function (e) {
+            return Math.abs(e % 2) === 1;
+        });
+    }
+
+    static find(entity, keyToFind) {
+        return Object.keys(entity).filter(function (key, index, self) {
+            return !key.indexOf(keyToFind)
+        })
+    }
 }
 
 function* createIndex() {
@@ -153,8 +288,6 @@ function* createIndex() {
     while (true)
         yield number++;
 }
-
-
 
 
 //console.log(isInRange)
