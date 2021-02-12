@@ -4,10 +4,14 @@
 
 class ActionController extends ehhEvent {
 
-    constructor(view) {
-        super();
-        this.view = view
+    constructor(context, view,model) {
+        super(context);
+        this.view = view;
+        this.model=model;
+
+        this.on('updateEditor',this.view.updateDomContent)
     }
+
 
 
 }

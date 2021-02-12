@@ -24,11 +24,11 @@ function processButtonClick(e) {
 document.getElementById("get").addEventListener("click", processButtonClick);
 document.getElementById("post").addEventListener("click", processButtonClick);
 
-
 class ehhEvent {
     constructor(context) {
         this._events = {};
         this.context = context
+        this.createListeners(context)
     }
 
 
@@ -42,34 +42,34 @@ class ehhEvent {
     }
 
     createListeners(entity) {
+        console.log(entity)
         let events = operate.find(entity, 'on')
-        events = [...events, operate.find(entity, 'key')]
-        console.log(`events => ${events}`)
+        console.log(events)
 
         let a = events.forEach(this.create)
     }
 
     create = (entity) => {
-        window[entity] = this.onEvent
-    }
-    onEvent = (e) => {
-        if (e.constructor.name === "MouseEvent") {
-            this.conductEvent(e);
-        }
+        window[entity] = this.conductEvent
     }
 
-    conductEvent(e) {
+    conductEvent = (e) => {
         if (e.type === "mouseover") {
-            console.log("Mouse moved")
+            // console.log("Mouse moved")
             //TODO
             // this.emit(e.type, e.target)
         } else if (e.type === "click") {
+            // console.log("click")
             this.emit("click", e.target)
-        } else {
-            if (e.type === "contextmenu") {
-                e.preventDefault();
-            }
         }
+        if (e.type === "contextmenu") {
+            e.preventDefault();
+
+        } else if (e.type === "input") {
+            this.emit('updateEditor',e.target.innerText)
+            console.log(e.target.innerText)
+        }
+
     }
 
 
