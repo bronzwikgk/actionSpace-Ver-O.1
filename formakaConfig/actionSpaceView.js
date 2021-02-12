@@ -222,11 +222,135 @@ var actionEditor = {
             }
         ]
 }
-
+/**
+ * actionSpaceObject is the root Object of actionSpace.
+ * It has all the scripts/divs/json/css needed for the actionSpace to function.
+ * 
+ */
 var actionSpace = {
-    div: {
-        name: 'actionSpaceContainer',
-        type: 'container',
-        id: 'tobeGeneratedUsingIndex'
-    }
+    link: {
+        rel: 'stylesheet',
+        id: 'actionEditor.css',
+        type : "text/css",
+        href : "beauty/action.css"
+    },
+    style: '/*min-height : 200px;*/ width: max-content; border-top: 0px; padding: 21px; overflow: auto; display:grid',
+    sideNav: {
+        class: 'sidenav',
+        id: 'sidenav',
+        div: []
+    },
+    actionView: [
+
+        {
+            name: 'button',
+            type: 'button',
+            class: 'action-view-button',
+            innerHTML: '<i class="fas fa-bars"></i> File'
+        }, {
+            name: 'div',
+            type: 'div',
+            id: 'dropdown-menu',
+            class: 'dropdown-menu',
+            div: [
+                {
+                    name: 'a',
+                    href: "javascript:;",
+                    type: 'button',
+                    id: 'newfile',
+                    innerText: 'New File'
+                }, {
+                    name: 'a',
+                    href: "javascript:;",
+                    type: 'a',
+                    id: 'openfile',
+                    innerText: 'Open File'
+
+                }, {
+
+                    name: 'a',
+                    href: "javascript:;",
+                    type: 'a',
+                    id: 'savefile',
+                    innerText: 'Save File'
+                }, {
+
+                    name: 'a',
+                    href: "javascript:;",
+                    type: 'a',
+                    id: 'export',
+                    innerText: 'Export'
+                },
+                {
+
+                    name: 'a',
+                    href: "javascript:;",
+                    type: 'a',
+                    id: 'import',
+                    innerText: 'Import'
+                }
+            ]
+        }
+
+    ],
+    actionEditorBlock:
+        [
+            {
+                name: 'div',
+                class: 'actionEditor-block',
+                id: 'actionEditor-block',
+                lineNumbers: true,
+                //mimeMode: ['html', 'richText', 'json', 'css', 'javascript'],
+                //output: ['self', 'output'],
+                state: 'idle',
+                divBlock: [
+                    {
+                        name: 'div',
+                        contentEditable: true,
+                        class: 'div-block ',
+                        lineNumbers: true,
+                        innerText: "Write whatever you can think of...",
+                        //mimeMode: ['html', 'richText', 'json', 'css', 'javascript'],
+                        //output: ['self', 'output'],
+                        state: 'idle',
+                    },
+                ]
+
+            }
+
+        ],
+    bottomBar:
+        [
+            {
+                name: 'button',
+                type: 'div',
+                class: 'topbar-button',
+                'innerHTML': '<i class="fas fa-heading  "></i>',
+                'data-cmd': 'addHeading'
+            },
+            {
+                name: 'button',
+                type: 'div',
+                class: 'topbar-button',
+                'innerHTML': '<i class="fas fa-paragraph"></i>',
+                'data-cmd': 'para'
+            }, {
+                name: 'button',
+                type: 'div',
+                class: 'topbar-button',
+                'innerHTML': '<i class="fas fa-save"></i>',
+                'data-cmd': 'save'
+            }, {
+                name: 'button',
+                type: 'div',
+                class: 'topbar-button',
+                'innerHTML': '<i class="fas fa-sync"></i>',
+                'data-cmd': 'reload'
+            }, {
+                name: "input",
+                accept: "application/json",
+                type: 'file',
+                "data-cmd": 'loadJson'
+            }
+        ]
 }
