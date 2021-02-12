@@ -1,52 +1,42 @@
 
-
 class process {
 
-
     static processReq(input, output, key, value) {
-        console.log(input);
         if (operate.is(input) === 'Object') {
-            // console.log("obj")
             var buffer = process.iterateObj(input, output, key);
         } else if (operate.is(input) === 'Array') {
-            // console.log("arr")
             var buffer = process.iterateObj(input, output, key);
         } else if (operate.is(input) === 'String') {
-
             console.log('String >>>', key, value);
-            //Entity.set(input,this.output,key,value);
+            //Entity.set(input,this.output,key,value);           
         }
         return buffer;
     }
-
     static iterateObj(input, output) {
         for (var key in input) {
-            const value = input[key];
-            // console.log("found", key, input[key])
+            var value = input[key];
+            //console.log("found",key,input[key])
             if (operate.is(value) === 'Object') {
-                // console.log("Object", output);
-                var buffer = actionEntity.create(input, output, key);
+                // console.log("Object",output);
+                var buffer = Entity.create(input, output, key);
                 process.iterateObj(input[key], buffer, key, value)
-                actionEntity.append(buffer, output);
+                Entity.append(buffer, output);
             } else if (operate.is(value) === 'Array') {
-                // console.log("foundArray", key)
-
-
-                var buffer = actionEntity.create(input, output, key);
+                console.log("foundArray", key)
+                var buffer = Entity.create(input, output, key);
                 process.iterateArr(input[key], buffer, key, value)
-                actionEntity.append(buffer, output);
+                Entity.append(buffer, output);
                 // console.log('Array',key, value, buffer);
             } else if (operate.is(value) === 'String' || operate.is(value) === 'Boolean') {
                 // console.log('String',key, value);
-                actionEntity.set(input, output, key, value);
-                //Entity.set(input,this.entity,key,value);
+                Entity.set(input, output, key, value);
+                //Entity.set(input,this.entity,key,value);           
             }
 
         }
         // console.log('Iterate Objoutput',output)
         return output;
     }
-
     static iterateArr(input, output, key, value, callback, callbackClass) {
         //  console.log("Iterating Array", input, output, key, value);
 
@@ -55,13 +45,13 @@ class process {
 
             if (operate.is(input[i]) === 'Object') { //console.log("Object in array",response)
 
-                var response = actionEntity.create(input[i], output, input[i].name);
-                process.iterateObj(input[i], response, input[i].name);
-                actionEntity.append(response, output);
+                var response = Entity.create(input[i], output, input[i].name);
+                process.iterateObj(input[i], response, input[i].name,)
+                Entity.append(response, output);
 
             } else if (operate.is(input[i]) === 'Array') { // console.log("found Array", key, input[key])
 
-            } else if (operate.is(input[i]) === 'String') { //  console.log("found property, Set Attributes in output", key, input[key])
+            } else if (operate.is(input[i]) == 'String') { //  console.log("found property, Set Attributes in output", key, input[key])
 
                 // Entity.set(input,output,key,input[key])
             } else {
@@ -82,4 +72,3 @@ class process {
     }
 
 }
-
