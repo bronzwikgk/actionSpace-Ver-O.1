@@ -1,13 +1,8 @@
 
-//create output
-        //filter keys
-        //filter values
-        //append to output
-        // getChild
 
 
 ehhAppOutput = document.createElement('ehhOutput');
-var temp = new Entity(actionEditor,ehhAppOutput);
+var temp = new Entity(actionSpace,ehhAppOutput);
 //newBlock = Entity.create(actionEditor.actionEditorBlock,temp.entity)
 //console.log(newBlock)
 //console.log(temp.entity)

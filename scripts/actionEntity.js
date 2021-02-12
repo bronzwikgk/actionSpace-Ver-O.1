@@ -43,7 +43,6 @@ class Entity {
             }
             // entity.set(input, response, 'id', key + index.next().value);
         }
-
         if (!response) console.log("no response", output);
         return response;
     }
