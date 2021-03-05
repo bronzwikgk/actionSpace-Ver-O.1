@@ -61,6 +61,8 @@ function set(output,input, key) {
        
     }
 
+    console.log(output);
+
     return output;
 }
 
@@ -142,6 +144,7 @@ function createJson2Html(input) {
         var output = document.createTextNode(input.nodeValue);    
     }
   
+    console.log(output);
     return output;
 }
 //This function validates a valid Url, Returns True or false
