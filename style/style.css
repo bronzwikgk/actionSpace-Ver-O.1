@@ -56,13 +56,6 @@ ehh > *:hover{
   outline:none;
 }
 
-body{
-  position: absolute; 
-  right: 0;
-  bottom: 0; 
-  height: 100vh;
-}
-
 ehh{
   position: fixed; 
   right: 0;
